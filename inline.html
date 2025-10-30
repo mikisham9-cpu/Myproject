@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red and White Split Background</title>
+    <style>
+        
+        body {
+            
+            min-height: 100vh;
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+
+            
+            background-image: linear-gradient(to right, red 50%, white 50%);
+        }
+
+       
+        .header-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; 
+            padding: 20px 0; 
+        }
+
+        
+        .header-left, .header-right {
+            width: 50%; 
+            box-sizing: border-box; 
+            padding: 0 20px; 
+            text-align: center;
+           
+            color: white; 
+        }
+
+        .header-right {
+            color: black; 
+        }
+
+        
+        .main-content {
+            flex-grow: 1; 
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="header-left">
+            <h2>Left</h2>
+            
+        </div>
+        <div class="header-right">
+            <h2>Right </h2>
+            
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+    </div>
+
+</body>
+</html>
