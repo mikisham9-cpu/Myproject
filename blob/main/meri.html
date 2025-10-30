@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Part Background</title>
+    <style>
+       
+        body {
+           
+            margin: 0;
+            padding: 0;
+           
+            min-height: 100vh;
+           
+            display: flex;
+            
+            align-items: stretch;
+        }
+
+        .section {
+            
+            flex: 1; 
+            
+            text-align: center;
+            
+            padding-top: 20px;
+            
+            color: #333; 
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .left {
+            background-color: green;
+        }
+
+        .center {
+            background-color: red;
+        }
+
+        .right {
+            background-color: white;
+        }
+
+        .header-text {
+           
+            background-color: rgba(255, 255, 255, 0.7); 
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section left">
+        <span class="header-text">LEFT</span>
+    </div>
+    <div class="section center">
+        <span class="header-text">CENTER</span>
+    </div>
+    <div class="section right">
+        <span class="header-text">RIGHT</span>
+    </div>
+</body>
+</html>
