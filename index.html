@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu (mera.html)</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex; 
+            min-height: 100vh; 
+            background-color: #f4f4f4;
+        }
+
+        
+        nav {
+            width: 200px; 
+            background-color: #333; 
+            padding: 20px 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; 
+        }
+
+        
+        nav a { 
+            text-decoration: none; 
+            color: white; 
+            font-weight: bold;
+            padding: 15px 20px;
+            border-bottom: 1px solid #444; 
+            display: block; 
+        }
+
+        nav a:hover {
+            background-color: #555; 
+            color: #ffcc00; 
+        }
+
+        
+        .content-area {
+            flex-grow: 1; 
+            padding: 20px 30px;
+            background-color: white;
+        }
+        
+        
+        h1, h2 {
+            color: #333;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="assign.html">Assign Program</a>
+        <a href="meri.html">Meri Program</a>
+        <a href="differ.html">Differ Program</a>
+    </nav>
+    
+    <div class="content-area">
+        <h1>Welcome to the Main Page!</h1>
+        
+        <p>Please select a program from the menu on the left:</p>
+        
+        <hr>
+        
+        <h2>Mera.html Content</h2>
+        <p>This is the content displayed on the main page itself, adjacent to the navigation menu.</p>
+
+        <p>This section will expand to fill the rest of the window horizontally.</p>
+    </div>
+
+</body>
+</html>
