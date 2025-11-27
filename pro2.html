@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Divided into 5 Parts</title>
+  <style>
+   
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+    header {
+      background-color: #ff4d4d; 
+      height: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.8em;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    footer {
+      background-color: #4d4dff; 
+      height: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.8em;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    .middle {
+      display: flex;
+      flex: 1; 
+    }
+
+    .left {
+      background-color: #4dff4d; 
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.5em;
+    }
+
+    .center {
+      background-color: #ffff4d; 
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 1.5em;
+    }
+
+    .right {
+      background-color: #ffb84d; 
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <header>Header </header>
+
+  <div class="middle">
+    <div class="left">Left </div>
+    <div class="center">Center </div>
+    <div class="right">Right </div>
+  </div>
+
+  <footer>Footer </footer>
+</body>
+</html>

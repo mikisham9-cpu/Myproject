@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu - Modern Version</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: #eef1f5;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 240px;
+            background: linear-gradient(180deg, #2c3e50, #1d262f);
+            height: 100vh;
+            padding-top: 30px;
+            color: white;
+            box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+            position: fixed;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .profile img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid #ffcc00;
+            object-fit: cover;
+        }
+
+        .profile h3 {
+            margin: 10px 0 0;
+            color: #ffcc00;
+            font-size: 18px;
+        }
+
+        /* Navigation Links */
+        nav a {
+            text-decoration: none;
+            color: #ddd;
+            padding: 15px 25px;
+            display: block;
+            font-size: 16px;
+            border-left: 4px solid transparent;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ffcc00;
+            color: #000;
+            border-left: 4px solid #000;
+            font-weight: bold;
+        }
+
+        /* Content Area */
+        .content-area {
+            margin-left: 240px;
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            color: #1d262f;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #555;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #bbb;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                width: 200px;
+            }
+            .content-area {
+                margin-left: 200px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            .content-area {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+        <div class="profile">
+            <!-- Replace profile.jpg with your image -->
+            <img src="miki.jpg" alt="Profile Image">
+            <h3>Your Name</h3>
+        </div>
+
+        <a href="pro1.html">Pro1 Program</a>
+        <a href="pro2.html">Pro2 Program</a>
+        <a href="pro3.html">Pro3 Program</a>
+        <a href="Bootstrap.html">Bootstrap</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-area">
+        <h1>Welcome to the Main Page!</h1>
+        <p>Select a program from the navigation menu.</p>
+
+        <hr>
+
+        <h2>Lab1.html Content</h2>
+        <p>This is the content displayed on the main page itself, beside the navigation menu.</p>
+        <p>This section expands to fill the rest of the window horizontally.</p>
+    </div>
+
+</body>
+</html>
